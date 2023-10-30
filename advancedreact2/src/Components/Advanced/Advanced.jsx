@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Advanced (){
         return(
-            <>
-                <p>
+            <div>
+                <p className="App-header">
                     Advanced React Course
                 </p>
-            </>
+            </div>
         )
     }
