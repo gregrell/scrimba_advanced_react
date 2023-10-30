@@ -1,10 +1,26 @@
 import logo from './logo.svg';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Advanced from './Components/Advanced/Advanced';
 
 function App() {
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Advanced/>}>
+
+      </Route>
+    )
+  )
+
+  
+
   return (
     <div className="App">
-      <header className="App-header">
+      <RouterProvider router={router}/>
+
+
+    {/*   <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +33,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      
     </div>
   );
 }
