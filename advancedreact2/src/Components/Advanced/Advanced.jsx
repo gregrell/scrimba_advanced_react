@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button/Button";
+import {AiFillDollarCircle} from 'react-icons/ai'
 
 export default function Advanced (){
         return(
@@ -9,7 +10,7 @@ export default function Advanced (){
                 </p>
 
                 <h2>Button Component Props Review</h2>
-                <Button>Buy Now!</Button>
+                <Button><AiFillDollarCircle/>Buy Now!</Button>
             </div>
         )
     }
