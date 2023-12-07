@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function Button({children, ...rest}){
+export default function Button({children, size, ...rest}){
 
 
     // function handleClick(){
@@ -10,7 +10,7 @@ export default function Button({children, ...rest}){
 
     return (
         <>
-        <button {...rest}>{children}</button>
+        <button {...rest} className={size}>{children}</button>
 
         </>
     )

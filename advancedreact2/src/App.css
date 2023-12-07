@@ -36,3 +36,7 @@ button > svg{
   margin-right: 7px;
   color: green;
 }
+
+button.lg{
+  padding: 80px;
+}
