@@ -6,7 +6,7 @@ export default function Advanced (){
 
 
         function handleClick(){
-            console.log("handled")
+            console.log("handled - again")
         }
 
 
@@ -17,7 +17,7 @@ export default function Advanced (){
                 </p>
 
                 <h2>Button Component Props Review</h2>
-                <Button onClick={handleClick} size="lg"><AiFillDollarCircle/>Buy Now!</Button>
+                <Button onClick={handleClick} size="sm"><AiFillDollarCircle/>Buy Now!</Button>
             </div>
         )
     }

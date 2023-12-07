@@ -40,3 +40,7 @@ button > svg{
 button.lg{
   padding: 80px;
 }
+
+button.sm{
+  padding: 2px;
+}
