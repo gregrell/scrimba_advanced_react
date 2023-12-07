@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Advanced from './Components/Advanced/Advanced';

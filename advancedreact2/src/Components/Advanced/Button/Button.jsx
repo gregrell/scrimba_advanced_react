@@ -1,16 +1,16 @@
 import React from "react";
 
 
-export default function Button({children}){
+export default function Button({children, ...rest}){
 
 
-    function handleClick(){
-        console.log('logging in.')
-    }
+    // function handleClick(){
+    //     console.log('logging in.')
+    // }
 
     return (
         <>
-        <button onClick={handleClick}>{children}</button>
+        <button {...rest}>{children}</button>
 
         </>
     )
