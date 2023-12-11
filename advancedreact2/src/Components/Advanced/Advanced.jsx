@@ -18,6 +18,10 @@ export default function Advanced (){
 
                 <h2>Button Component Props Review</h2>
                 <Button onClick={handleClick} size="sm"><AiFillDollarCircle/>Buy Now!</Button>
+                <Button onClick={handleClick} variant="success">success</Button>
+                <Button onClick={handleClick} variant="warning">warning</Button>
+                <Button onClick={handleClick} variant="danger">danger</Button>
+               
             </div>
         )
     }

@@ -29,7 +29,10 @@ button{
   display: flex;
   margin: auto;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  
 }
 
 button > svg{
@@ -43,4 +46,18 @@ button.lg{
 
 button.sm{
   padding: 2px;
+}
+
+.green{
+  background-color: lightgreen;
+  color: green;
+}
+.yellow{
+  background-color: yellow;
+  color: rgba(79, 79, 57, 0.247);
+
+}
+.red{
+  background-color: lightcoral;
+  color: red;
 }
