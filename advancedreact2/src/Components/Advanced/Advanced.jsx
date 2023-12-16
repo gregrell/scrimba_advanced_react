@@ -23,6 +23,7 @@ export default function Advanced (){
                 <Button onClick={handleClick} variant="warning">warning</Button>
                 <Button onClick={handleClick} variant="danger">danger</Button>
                 <Avatar variant='green'>GR</Avatar>
+                <Avatar variant='red'></Avatar>
                
             </div>
         )

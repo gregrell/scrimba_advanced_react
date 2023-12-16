@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+import { AiFillFrown } from "react-icons/ai";
 
 export default function Avatar({img, children, variant, className, ...rest}){
 
@@ -21,7 +22,8 @@ export default function Avatar({img, children, variant, className, ...rest}){
         <>
             <div {...rest} className={allClasses}>
                 {img && <img alt=""></img>}
-                <p>{children}</p>
+                <p>{children && children}</p>
+                {!children && <AiFillFrown/>}
 
             </div>
         </>

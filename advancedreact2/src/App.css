@@ -37,6 +37,13 @@ body{
   border-radius: 50%;
 }
 
+.avatar > svg{
+  display: flex;
+  align-self: center;
+  height: 90%;
+  width: 90%;
+}
+
 button{
   display: flex;
   margin: auto;
