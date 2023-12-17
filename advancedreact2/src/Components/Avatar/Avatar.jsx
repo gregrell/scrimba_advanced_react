@@ -1,6 +1,7 @@
 import React from "react";
 import classnames from "classnames";
-import { AiFillFrown } from "react-icons/ai";
+import { AiFillFrown, AiFillSmile } from "react-icons/ai";
+
 
 export default function Avatar({img, children, variant, className, ...rest}){
 
@@ -13,6 +14,9 @@ export default function Avatar({img, children, variant, className, ...rest}){
         color="green"
     }
 
+    if (variant ==="blue"){
+        color="blue"
+    }
 
 
     let allClasses = classnames(className, color, "avatar")
@@ -21,10 +25,9 @@ export default function Avatar({img, children, variant, className, ...rest}){
     return(
         <>
             <div {...rest} className={allClasses}>
-                {img && <img alt=""></img>}
+                {img && <img alt="" src={img}></img>}
                 <p>{children && children}</p>
-                {!children && <AiFillFrown/>}
-
+                {!children && <AiFillSmile/>}
             </div>
         </>
     )

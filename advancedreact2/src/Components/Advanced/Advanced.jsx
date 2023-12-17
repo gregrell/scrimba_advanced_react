@@ -3,6 +3,7 @@ import Button from "./Button/Button";
 import {AiFillDollarCircle} from 'react-icons/ai'
 import Avatar from "../Avatar/Avatar";
 
+
 export default function Advanced (){
 
 
@@ -23,7 +24,8 @@ export default function Advanced (){
                 <Button onClick={handleClick} variant="warning">warning</Button>
                 <Button onClick={handleClick} variant="danger">danger</Button>
                 <Avatar variant='green'>GR</Avatar>
-                <Avatar variant='red'></Avatar>
+                <Avatar variant='blue'></Avatar>
+                <Avatar variant='red' img="logo192.png"></Avatar>
                
             </div>
         )
