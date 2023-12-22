@@ -42,7 +42,11 @@ export default function Advanced (){
 
                 <h2>Prop Drilling Solutions</h2>
 
-                <code>Compound Component Solution with Context Provider</code>
+                <code>Compound Component Solution with Context Provider
+                    Context is created at top level component, and provided to children. 
+                    This example only passes toggle state and the handle click function to 
+                    change it
+                </code>
                 <Menu>
                     <MenuButton>Click</MenuButton>
                     <MenuList>
