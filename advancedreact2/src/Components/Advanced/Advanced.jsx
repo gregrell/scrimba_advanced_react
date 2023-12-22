@@ -2,6 +2,10 @@ import React from "react";
 import Button from "./Button/Button";
 import {AiFillDollarCircle} from 'react-icons/ai'
 import Avatar from "../Avatar/Avatar";
+import Menu from "../Menu/Menu";
+import MenuButton from "../Menu/MenuButton";
+import MenuList from "../Menu/MenuList";
+import MenuItem from "../Menu/MenuItem";
 
 
 export default function Advanced (){
@@ -10,6 +14,9 @@ export default function Advanced (){
         function handleClick(){
             console.log("handled - again")
         }
+
+        const sports = ["Tennis", "Pickleball", "Racquetball", "Squash"]
+
 
 
         return(
@@ -35,7 +42,16 @@ export default function Advanced (){
 
                 <h2>Prop Drilling Solutions</h2>
 
-                <code>Compound Component Solution</code>
+                <code>Compound Component Solution with Context Provider</code>
+                <Menu>
+                    <MenuButton>Click</MenuButton>
+                    <MenuList>
+                        {sports.map(function(sport){
+                            return <MenuItem>{sport}</MenuItem>
+                        })}
+                    </MenuList>
+
+                </Menu>
                
             </div>
         )
