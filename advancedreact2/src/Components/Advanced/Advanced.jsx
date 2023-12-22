@@ -18,14 +18,24 @@ export default function Advanced (){
                     Advanced React Course
                 </p>
 
-                <h2>Button Component Props Review</h2>
+                <h2>Reusability Component Review</h2>
+                
+                <code>This section is about reusability. Each of these buttons takes in children and renders them.</code>
+                
                 <Button onClick={handleClick} size="sm"><AiFillDollarCircle/>Buy Now!</Button>
                 <Button onClick={handleClick} variant="success">success</Button>
                 <Button onClick={handleClick} variant="warning">warning</Button>
                 <Button onClick={handleClick} variant="danger">danger</Button>
+                
+                <code>These avatars conditionally render based on the children and props given to them</code>
+                
                 <Avatar variant='green'>GR</Avatar>
                 <Avatar variant='blue'></Avatar>
                 <Avatar variant='red' img="logo192.png"></Avatar>
+
+                <h2>Prop Drilling Solutions</h2>
+
+                <code>Compound Component Solution</code>
                
             </div>
         )
