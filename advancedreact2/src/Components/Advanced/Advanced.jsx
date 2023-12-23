@@ -6,9 +6,7 @@ import Menu from "../Menu/Menu";
 import MenuButton from "../Menu/MenuButton";
 import MenuList from "../Menu/MenuList";
 import MenuItem from "../Menu/MenuItem";
-import { Toggle, ToggleButton, ToggledOn, ToggledOff } from "../Toggle/Toggle";
-import { BsStar, BsStarFill } from "react-icons/bs"
-
+import Star from "../Star";
 
 
 export default function Advanced (){
@@ -63,17 +61,9 @@ export default function Advanced (){
                     and children are rendered based on if the state is toggled on or off. This allows for a 'generic toggle' component with reusable
                     children components based on the toggle situation.
                 </code>
+                <Star/>
 
-                <Toggle>
-                    <ToggleButton>
-                        <ToggledOn>
-                            <BsStarFill className="star filled"/>
-                        </ToggledOn>
-                        <ToggledOff>
-                            <BsStar className="star"/>
-                        </ToggledOff>
-                    </ToggleButton>                    
-                </Toggle>               
+            
             </div>
         )
     }
