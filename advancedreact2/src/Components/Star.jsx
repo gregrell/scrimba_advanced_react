@@ -9,7 +9,7 @@ export default function Star(){
             <Toggle>
                     <ToggleButton>
                         <ToggledOn>
-                            <BsStarFill className="star filled"/>
+                            <BsStarFill className="star filled fade-in"/>
                         </ToggledOn>
                         <ToggledOff>
                             <BsStar className="star"/>
