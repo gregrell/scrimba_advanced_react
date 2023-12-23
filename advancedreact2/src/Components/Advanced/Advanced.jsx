@@ -6,6 +6,9 @@ import Menu from "../Menu/Menu";
 import MenuButton from "../Menu/MenuButton";
 import MenuList from "../Menu/MenuList";
 import MenuItem from "../Menu/MenuItem";
+import { Toggle, ToggleButton, ToggledOn, ToggledOff } from "../Toggle/Toggle";
+import { BsStar, BsStarFill } from "react-icons/bs"
+
 
 
 export default function Advanced (){
@@ -54,9 +57,23 @@ export default function Advanced (){
                             return <MenuItem>{sport}</MenuItem>
                         })}
                     </MenuList>
-
                 </Menu>
-               
+
+                <code>Headless Component Example. Toggle component with an On and Off Child used here. State is maintained in the Toggle component
+                    and children are rendered based on if the state is toggled on or off. This allows for a 'generic toggle' component with reusable
+                    children components based on the toggle situation.
+                </code>
+
+                <Toggle>
+                    <ToggleButton>
+                        <ToggledOn>
+                            <BsStarFill className="star filled"/>
+                        </ToggledOn>
+                        <ToggledOff>
+                            <BsStar className="star"/>
+                        </ToggledOff>
+                    </ToggleButton>                    
+                </Toggle>               
             </div>
         )
     }
