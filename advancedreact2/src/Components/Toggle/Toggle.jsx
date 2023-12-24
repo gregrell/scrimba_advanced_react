@@ -9,8 +9,19 @@ const toggleContext = React.createContext(null)
 export function Toggle({children, onToggle,  ...rest}){
 
     const [open, setToggleStatus] = React.useState(false)
+    let firstRender = React.useRef(true)
+    
 
-    React.useEffect(()=>{onToggle()},[open])
+    React.useEffect(()=>{
+        if(firstRender.current){
+            firstRender.current=false
+            console.log('first time')
+        }
+        else{
+            onToggle()
+        }
+    
+    },[open])
 
     function handleClick(){
         setToggleStatus(!open)
