@@ -61,7 +61,7 @@ export default function Advanced (){
                     and children are rendered based on if the state is toggled on or off. This allows for a 'generic toggle' component with reusable
                     children components based on the toggle situation.
                 </code>
-                <Star/>
+                <Star onChange={()=>{console.log('clicked')}}/>
 
             
             </div>

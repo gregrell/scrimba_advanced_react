@@ -6,13 +6,17 @@ import React from "react";
 const toggleContext = React.createContext(null)
 
 
-export function Toggle({children,...rest}){
+export function Toggle({children, onToggle,  ...rest}){
 
     const [open, setToggleStatus] = React.useState(false)
+
+    React.useEffect(()=>{onToggle()},[open])
 
     function handleClick(){
         setToggleStatus(!open)
     }
+
+   
 
     return(
         <>
@@ -28,7 +32,7 @@ export {toggleContext}
 
 export function ToggledOn({children}){
 
-    const {open, handleClick} = React.useContext(toggleContext)
+    const {open} = React.useContext(toggleContext)
     
     return open? (
         <>

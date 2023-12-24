@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import { AiFillFrown, AiFillSmile } from "react-icons/ai";
+import { AiFillSmile } from "react-icons/ai";
 
 
 export default function Avatar({img, children, variant, className, ...rest}){

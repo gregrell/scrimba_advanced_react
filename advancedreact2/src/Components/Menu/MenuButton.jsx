@@ -3,7 +3,7 @@ import { ToggleContext } from "./Menu";
 
 export default function MenuButton({children,onClick, ...rest}){
 
-    const {open, handleClick} = React.useContext(ToggleContext)
+    const {handleClick} = React.useContext(ToggleContext)
 
     return(
         <>

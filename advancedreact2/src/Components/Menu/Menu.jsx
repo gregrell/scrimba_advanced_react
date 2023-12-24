@@ -1,5 +1,4 @@
 import React from "react";
-import MenuButton from "./MenuButton";
 
 
 // Here create context for use in children 

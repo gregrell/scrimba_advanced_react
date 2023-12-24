@@ -3,13 +3,16 @@ import { BsStar, BsStarFill } from "react-icons/bs"
 import { Toggle, ToggleButton, ToggledOn, ToggledOff } from "./Toggle/Toggle";
 
 
-export default function Star(){
+export default function Star({onChange}){
+
+   
+
     return(
         <>
-            <Toggle>
+            <Toggle onToggle={onChange}>
                     <ToggleButton>
                         <ToggledOn>
-                            <BsStarFill className="star filled fade-in"/>
+                            <BsStarFill className="star filled"/>
                         </ToggledOn>
                         <ToggledOff>
                             <BsStar className="star"/>
