@@ -7,6 +7,7 @@ import MenuButton from "../Menu/MenuButton";
 import MenuList from "../Menu/MenuList";
 import MenuItem from "../Menu/MenuItem";
 import Star from "../Star";
+import Boxy from "../Boxy";
 
 
 export default function Advanced (){
@@ -52,7 +53,7 @@ export default function Advanced (){
                     <MenuButton>Click</MenuButton>
                     <MenuList>
                         {sports.map(function(sport){
-                            return <MenuItem>{sport}</MenuItem>
+                            return <MenuItem key={sport}>{sport}</MenuItem>
                         })}
                     </MenuList>
                 </Menu>
@@ -61,7 +62,13 @@ export default function Advanced (){
                     and children are rendered based on if the state is toggled on or off. This allows for a 'generic toggle' component with reusable
                     children components based on the toggle situation.
                 </code>
-                <Star onChange={()=>{console.log('clicked')}}/>
+                <Star/>
+                
+                <code>This is render props using a second toggle headless component called 'switcher'
+                </code>
+                <br/>
+
+                <Boxy/>
 
             
             </div>

@@ -1,5 +1,5 @@
 body{
-  background-color:rgb(219, 207, 207)
+  background-color:rgb(219, 207, 207);
 }
 
 .App {
@@ -44,6 +44,18 @@ body{
   height: 90%;
   width: 90%;
 }
+
+
+.box{
+  display: inline-block;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+}
+
 
 button{
   display: flex;

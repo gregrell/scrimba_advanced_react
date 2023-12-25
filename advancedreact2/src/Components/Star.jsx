@@ -3,7 +3,7 @@ import { BsStar, BsStarFill } from "react-icons/bs"
 import { Toggle, ToggleButton, ToggledOn, ToggledOff } from "./Toggle/Toggle";
 
 
-export default function Star({onChange}){
+export default function Star({onChange = ()=>{}}){  // use a noop on onChange in case user doesn't provide a function from parent
 
    
 
