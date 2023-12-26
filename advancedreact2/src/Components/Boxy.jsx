@@ -6,13 +6,10 @@ export default function Boxy({children}){
         <>
         <Switcher>
             <Switcher.Button>
-                <Switcher.On>
-                    <div className="box blue">blue                      
-                    </div>
-                </Switcher.On>
-                <Switcher.Off>
-                    <div className="box red">red</div>
-                </Switcher.Off>
+                <Switcher.Display>
+                    {(switched)=>{return <div className={`box ${switched ? "blue":"red"}`}>{switched ? "blue":"red"}</div>}}
+           
+                </Switcher.Display>
             </Switcher.Button>            
         </Switcher>
         </>
