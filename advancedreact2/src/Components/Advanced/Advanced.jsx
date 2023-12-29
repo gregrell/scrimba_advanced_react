@@ -79,7 +79,7 @@ export default function Advanced (){
 
                 <code>
                     Here this Fire component uses all the principles of the headless component, the above Boxy and Star components, but is drastically simplified by 
-                    creating a custom hook called useToggle. Really this whole course should have just taught this approach and that's it. 
+                    creating a custom hook called useToggle. useToggle is built using useEfectOnUpdate custom hooks from above. Really this whole course should have just taught this approach and that's it. 
                 </code>
                 <br/>
                 <Fire/>
