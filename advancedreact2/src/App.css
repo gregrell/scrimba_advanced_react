@@ -86,6 +86,17 @@ button.sm{
   padding: 2px;
 }
 
+
+.fire{
+  width: 70px;
+  height: 70px;
+  color: black;
+}
+.fire.filled{
+  color:red;
+  transition: 0.8s;
+}
+
 .green{
   background-color: lightgreen;
   color: green;

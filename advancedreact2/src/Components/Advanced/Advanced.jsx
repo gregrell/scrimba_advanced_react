@@ -8,6 +8,7 @@ import MenuList from "../Menu/MenuList";
 import MenuItem from "../Menu/MenuItem";
 import Star from "../Star";
 import Boxy from "../Boxy";
+import Fire from "../Fire";
 
 
 export default function Advanced (){
@@ -75,6 +76,13 @@ export default function Advanced (){
                 <br/>
                 <br/>
                 <br/>
+
+                <code>
+                    Here this Fire component uses all the principles of the headless component, the above Boxy and Star components, but is drastically simplified by 
+                    creating a custom hook called useToggle. Really this whole course should have just taught this approach and that's it. 
+                </code>
+                <br/>
+                <Fire/>
 
 
 
