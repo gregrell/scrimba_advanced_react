@@ -1,15 +1,19 @@
 import React from "react";
+import useEffectOnUpdate from "../../Hooks/useEffectOnUpdate"
 
 
 const switchContext = React.createContext(null)
 
-export  function Switcher({children}){
+export  function Switcher({children, onSwitch}){
+
 
     const [switched, setSwitch] = React.useState(false)
 
     function handleClick(){
         setSwitch(prevState=>!prevState)
     }
+
+    useEffectOnUpdate(onSwitch,[switched])
 
     return(
         <>

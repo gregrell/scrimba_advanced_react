@@ -1,5 +1,16 @@
 import React from "react";
 
-function useEffectOnUpdate(effectFunction, deps){
-    
+export default function useEffectOnUpdate(effectFunction, deps){
+    const firstRender = React.useRef(true)
+
+    React.useEffect(function(){
+        if(firstRender.current){
+            firstRender.current=false
+        }
+        else{
+            effectFunction()
+        }
+
+    },deps)
+
 }

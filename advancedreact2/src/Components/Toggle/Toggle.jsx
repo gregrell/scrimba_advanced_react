@@ -15,7 +15,6 @@ export function Toggle({children, onToggle,  ...rest}){
     React.useEffect(()=>{
         if(firstRender.current){
             firstRender.current=false
-            console.log('first time')
         }
         else{
             onToggle()

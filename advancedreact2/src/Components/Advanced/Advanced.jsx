@@ -19,7 +19,7 @@ export default function Advanced (){
 
         const sports = ["Tennis", "Pickleball", "Racquetball", "Squash"]
 
-
+      
 
         return(
             <div>
@@ -64,11 +64,19 @@ export default function Advanced (){
                 </code>
                 <Star/>
                 
-                <code>This is render props using a second toggle headless component called 'switcher'
+                <code>This is render props using a second toggle headless component called 'switcher'. Inside the Switcher component
+                    there's a custom hook called useEffectOnUpdate which will allow the use effect to render only on button presses 
+                    and not on the first render. This is done using a useRef. The parent component is called Boxy and the prop onSwitch is passed to the Switcher
+                    headless component for functionality. Also keep in mind the Switcher funcion has an empty function called by default in case nothing is passed 
+                    in the onSwitch prop.
                 </code>
                 <br/>
+                <Boxy onSwitch={()=>{console.log('this text sent to Boxy component as a function')}}/>
+                <br/>
+                <br/>
+                <br/>
 
-                <Boxy/>
+
 
             
             </div>

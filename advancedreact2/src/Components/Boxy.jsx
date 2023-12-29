@@ -1,10 +1,10 @@
 import React from "react";
 import Switcher from "./Switcher";
 
-export default function Boxy({children}){
+export default function Boxy({onSwitch = ()=>{}}){
     return(
         <>
-        <Switcher>
+        <Switcher onSwitch={onSwitch}>
             <Switcher.Button>
                 <Switcher.Display>
                     {/* This is render props. switched is passed to the children in the Display component as children(switched) 
