@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineFire } from "react-icons/ai";
 import useToggle from "../Hooks/useToggle";
-import useEffectOnUpdate from "../Hooks/useEffectOnUpdate";
 
 
 export default function Fire(){

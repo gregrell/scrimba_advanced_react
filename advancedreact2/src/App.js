@@ -2,12 +2,16 @@ import React from 'react';
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Advanced from './Components/Advanced/Advanced';
+import Layout from './Components/Routing/Layout';
+import Library from './Components/Routing/Library';
 
 function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Advanced/>}>
+      <Route path="/" element={<Layout/>}>
+        <Route index element={<Advanced/>}/>
+        <Route path="/library" element={<Library/>}/>
 
       </Route>
     )

@@ -24,10 +24,7 @@ export default function Advanced (){
 
         return(
             <div>
-                <p className="App-header">
-                    Advanced React Course
-                </p>
-
+              
                 <h2>Reusability Component Review</h2>
                 
                 <code>This section is about reusability. Each of these buttons takes in children and renders them.</code>
@@ -36,6 +33,10 @@ export default function Advanced (){
                 <Button onClick={handleClick} variant="success">success</Button>
                 <Button onClick={handleClick} variant="warning">warning</Button>
                 <Button onClick={handleClick} variant="danger">danger</Button>
+                <br/>
+                <br/>
+                <br/>
+
                 
                 <code>These avatars conditionally render based on the children and props given to them</code>
                 
@@ -59,11 +60,19 @@ export default function Advanced (){
                     </MenuList>
                 </Menu>
 
+                <br/>
+                <br/>
+                <br/>
+
+
                 <code>Headless Component Example. Toggle component with an On and Off Child used here. State is maintained in the Toggle component
                     and children are rendered based on if the state is toggled on or off. This allows for a 'generic toggle' component with reusable
                     children components based on the toggle situation.
                 </code>
                 <Star/>
+                <br/>
+                <br/>
+                <br/>
                 
                 <code>This is render props using a second toggle headless component called 'switcher'. Inside the Switcher component
                     there's a custom hook called useEffectOnUpdate which will allow the use effect to render only on button presses 
