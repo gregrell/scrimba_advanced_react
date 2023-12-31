@@ -36,6 +36,7 @@ p{
 
 .avatar{
   display: flex;
+  flex-direction: column;
   margin: auto;
   height: 50px;
   width: 50px;
