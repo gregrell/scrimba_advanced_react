@@ -8,6 +8,7 @@ export default function Header(){
                 <p className="App-logo">Advanced React Course</p>
                 <NavLink to="/" className={({isActive})=> isActive ? 'navlink active':'navlink'}>Home</NavLink>
                 <NavLink to="/library" className={({isActive})=> isActive ? 'navlink active':'navlink'}>Library</NavLink>
+                <NavLink to="/performance" className={({isActive})=> isActive ? 'navlink active':'navlink'}>Performance</NavLink>
             </nav>
         </>
     )

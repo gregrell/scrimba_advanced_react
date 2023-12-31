@@ -4,6 +4,8 @@ import './App.css';
 import Advanced from './Components/Advanced/Advanced';
 import Layout from './Components/Routing/Layout';
 import Library from './Components/Routing/Library';
+import PerformancePage from './Components/Routing/Performance'
+
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
       <Route path="/" element={<Layout/>}>
         <Route index element={<Advanced/>}/>
         <Route path="/library" element={<Library/>}/>
+        <Route path="/performance" element={<PerformancePage/>}/>
 
       </Route>
     )
