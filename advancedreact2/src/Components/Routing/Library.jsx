@@ -1,6 +1,6 @@
 import React from "react";
 import Badge from "../Badge/Badge";
-
+import Banner from "../Banner/Banner";
 
 export default function Library(){
     return(
@@ -39,6 +39,11 @@ export default function Library(){
             </div>
 
             <h3>Banners</h3>
+            <div className="presentationPort">
+                <ul>
+                    <li><Banner></Banner></li>
+                </ul>
+            </div>
          
 
         </>
