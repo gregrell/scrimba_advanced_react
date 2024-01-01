@@ -160,7 +160,8 @@ li{
   width: 896px;
   padding: 16px;
   align-items: flex-start;
-  gap: 12px;
+  flex-direction: column;
+  gap: 1px;
 
   border-radius: 6px;
 
@@ -169,6 +170,7 @@ li{
   font-style: normal;
   font-weight: 500;
   line-height: 20px; /* 142.857% */
+  
 }
 
 

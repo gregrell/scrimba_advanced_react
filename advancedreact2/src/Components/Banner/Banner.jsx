@@ -1,6 +1,10 @@
 import React from "react";
 import classnames from "classnames";
 import { FaInfoCircle } from "react-icons/fa";
+import { RiCheckboxCircleFill } from "react-icons/ri";
+import { IoIosWarning } from "react-icons/io";
+import { AiFillCloseCircle } from "react-icons/ai";
+
 
 
 export default function Banner({children, variant, className, ...rest}){
@@ -23,8 +27,17 @@ export default function Banner({children, variant, className, ...rest}){
     return(
         <>
             <div className={allClasses}>
-                <FaInfoCircle color="#60A5FA"/>Update available
-                {children && children}
+                <div>
+                {bannerType==='neutral' && <><FaInfoCircle color="#60A5FA"/> Update available</>}
+                {bannerType==='success' && <><RiCheckboxCircleFill color="#34D399"/> Success!</>}
+                {bannerType==='warning' && <><IoIosWarning color="#FBBF24"/> Attention!</>}
+                {bannerType==='error' && <><AiFillCloseCircle color="#F87171"/> There is a problem with your application</>}
+                </div>
+                <div>
+                    {children && children}
+                </div>
+
+                
 
 
             </div>
