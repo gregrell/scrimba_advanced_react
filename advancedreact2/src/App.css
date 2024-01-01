@@ -163,6 +163,12 @@ li{
   gap: 12px;
 
   border-radius: 6px;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
 }
 
 
