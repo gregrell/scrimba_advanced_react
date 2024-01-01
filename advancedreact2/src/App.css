@@ -3,7 +3,7 @@
 
 
 body{
-  background-color:rgb(219, 207, 207);
+  background-color:rgb(226, 226, 226);
 }
 
 p{
@@ -61,6 +61,28 @@ li{
   border-radius: 50%;
 }
 
+
+.advanced.yellow{
+  background-color: yellow;
+  color: rgba(79, 79, 57, 0.247);
+
+}
+.advanced.red{
+  background-color: lightcoral;
+  color: red;
+}
+
+.advanced.blue{
+  background-color: lightblue;
+  color: blue;
+}
+
+.advanced.green{
+  background-color: lightgreen;
+  color: green;
+}
+
+
 .avatar > svg{
   display: flex;
   align-self: center;
@@ -92,43 +114,43 @@ li{
   border-radius: 12px;
 }
 
-.badge.gray{
+.gray{
   color: #1F2937;
   background: #F3F4F6;
 }
 
-.badge.red{
+.red{
   color: #991B1B;
   background: #FEE2E2;
 }
 
-.badge.yellow{
+.yellow{
   color: #92400E;
   background: #FEF3C7;
 }
 
-.badge.green{
+.green{
   color:#065F46;
   background:#D1FAE5;
 }
 
-.badge.blue{
+.blue{
   color:#1E40AF;
   background:#DBEAFE;
 }
 
-.badge.indigo{
+.indigo{
   color:#3730A3;
   background:#E0E7FF;
 }
 
 
-.badge.purple{
+.purple{
   color:#5B21B6;
   background:#EDE9FE;
 }
 
-.badge.pink{
+.pink{
   color:#9D174D;
   background:#FCE7F3;
 }
@@ -197,10 +219,7 @@ button.sm{
   transition: 0.8s;
 }
 
-.green{
-  background-color: lightgreen;
-  color: green;
-}
+
 
 .navlink{
   padding: 0px 5px 0px 10px;
@@ -222,21 +241,6 @@ button.sm{
   display:flex;
 }
 
-
-.yellow{
-  background-color: yellow;
-  color: rgba(79, 79, 57, 0.247);
-
-}
-.red{
-  background-color: lightcoral;
-  color: red;
-}
-
-.blue{
-  background-color: lightblue;
-  color: blue;
-}
 
 .menu-item{
   user-select: none;

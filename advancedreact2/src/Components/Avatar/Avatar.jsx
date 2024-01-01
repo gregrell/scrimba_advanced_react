@@ -19,7 +19,7 @@ export default function Avatar({img, children, variant, className, ...rest}){
     }
 
 
-    let allClasses = classnames(className, color, "avatar")
+    let allClasses = classnames(className, color,"advanced", "avatar")
 
 
     return(

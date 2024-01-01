@@ -19,7 +19,7 @@ export default function Button({children, className, size, variant, ...rest}){
     
 
 
-    let allClasses = classnames(className, size, color) //combined class names into a single variable - used below
+    let allClasses = classnames(className, size, color, "advanced") //combined class names into a single variable - used below
 
 
 
