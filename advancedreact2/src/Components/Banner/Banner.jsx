@@ -40,10 +40,6 @@ export default function Banner({children, variant, className, ...rest}){
                 <div style={{color: subtextColor, fontWeight: '400'}}>
                     {children && children}
                 </div>
-
-                
-
-
             </div>
         </>
     )

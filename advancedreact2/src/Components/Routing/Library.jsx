@@ -1,6 +1,9 @@
 import React from "react";
 import Badge from "../Badge/Badge";
 import Banner from "../Banner/Banner";
+import Card from "../Card/Card";
+import { IoCloudUpload } from "react-icons/io5";
+
 
 export default function Library(){
     return(
@@ -56,6 +59,21 @@ export default function Library(){
                 <li><Banner variant='error'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</Banner></li>
                 </ul>
             </div>
+
+
+            <h3>Cards</h3>
+            <br/>
+            <br/>
+
+            <div className="presentation">
+                <Card title="Easy Deployment" icon={<IoCloudUpload/>}></Card>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+
          
 
         </>
