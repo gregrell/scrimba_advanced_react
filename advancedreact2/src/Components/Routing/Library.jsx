@@ -46,6 +46,15 @@ export default function Library(){
                 <li><Banner variant='warning'></Banner></li>
                 <li><Banner variant='error'></Banner></li>
                 </ul>
+            </div>  
+            
+            <div className="presentationPort">
+                <ul>
+                <li><Banner>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</Banner></li>
+                <li><Banner variant='success'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</Banner></li>
+                <li><Banner variant='warning'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</Banner></li>
+                <li><Banner variant='error'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</Banner></li>
+                </ul>
             </div>
          
 
