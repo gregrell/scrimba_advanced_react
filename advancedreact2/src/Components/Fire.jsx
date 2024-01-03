@@ -8,7 +8,7 @@ export default function Fire(){
    
 
     const[on, toggleFunction] = useToggle({
-        initialValue: true, 
+        initialValue: false, 
         onToggle: toggledCallback
     })
 
