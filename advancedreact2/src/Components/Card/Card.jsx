@@ -1,5 +1,9 @@
 import React from "react";
+/* Here's an example of styling using CSS modules. Stylesheet done in the same component folder with Card.module.css  */
+
 import CardCSS from './Card.module.css'
+
+
 
 export default function Card({children, icon, title, ...rest}){
     return(
