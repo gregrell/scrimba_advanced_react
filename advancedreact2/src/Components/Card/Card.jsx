@@ -1,19 +1,20 @@
 import React from "react";
+import CardCSS from './Card.module.css'
 
 export default function Card({children, icon, title, ...rest}){
     return(
         <>
-            <div className="card">
-                <div className="card-content">
-                    <div className="card-iconbg">
-                        <div className="card-icon">
+            <div className={CardCSS.card}>
+                <div className={CardCSS.contentbox}>
+                    <div className={CardCSS.iconbg}>
+                        <div className={CardCSS.icon}>
                             {icon ? React.cloneElement(icon, {size:24}) : ''}
                         </div>
                     </div>
-                    <div className="card-title">
+                    <div className={CardCSS.title}>
                         {title? title:'Card'}
                     </div>
-                    <div className="card-text">
+                    <div className={CardCSS.text}>
                         {children ? children:'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.'}
                     </div>
 
