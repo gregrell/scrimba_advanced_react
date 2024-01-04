@@ -11,7 +11,7 @@ export default function Card({children, icon, title, ...rest}){
                             {icon ? React.cloneElement(icon, {size:24}) : ''}
                         </div>
                     </div>
-                    <div className={CardCSS.title}>
+                    <div className={`${CardCSS.title} ${CardCSS.red}`}>
                         {title? title:'Card'}
                     </div>
                     <div className={CardCSS.text}>
