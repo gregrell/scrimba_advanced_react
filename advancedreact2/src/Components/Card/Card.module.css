@@ -88,4 +88,6 @@
         rgb(175, 238, 184) 100%
       );
     
+    border-radius: 8px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
   }
