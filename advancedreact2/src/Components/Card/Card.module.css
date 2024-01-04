@@ -78,3 +78,14 @@
   .red{
     color: red;
   }
+
+  .shaded{
+    background: linear-gradient(
+        to top,
+        #F9FAFB 0%,
+        #F9FAFB 30%,
+        rgb(206, 238, 175) 55%,
+        rgb(175, 238, 184) 100%
+      );
+    
+  }

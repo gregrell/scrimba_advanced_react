@@ -67,6 +67,8 @@ export default function Library(){
 
             <div className="presentation">
                 <Card title="Easy Deployment" icon={<IoCloudUpload/>}></Card>
+                <br/>
+                <Card title="Easy Deployment" icon={<IoCloudUpload/>} variant='shaded'></Card>
             </div>
             <br/>
             <br/>
