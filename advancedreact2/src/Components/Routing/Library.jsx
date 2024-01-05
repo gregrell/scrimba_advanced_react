@@ -76,14 +76,30 @@ export default function Library(){
             <br/>
             <br/>
 
+            <h3>Testimonial</h3>
+            <br/>
+            <br/>
             <div className="presentation">
                 <Testimonial
                     image={imageofwoman}
                     name="Mary Andersons"
                     companyName="Workcation"
                     position="CTO"
-                >piss</Testimonial>                
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. </Testimonial>                
             </div>
+
+            <br/>
+            <br/>
+            <br/>   <br/>
+            <br/>
+            <br/>   <br/>
+            <br/>
+            <br/>   <br/>
+            <br/>
+            <br/>
+
+
+
 
 
          
