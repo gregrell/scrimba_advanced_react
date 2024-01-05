@@ -8,7 +8,7 @@ import CardCSS from './Card.module.css'
 export default function Card({children, icon, title, variant, ...rest}){
     return(
         <>
-            <div className={`${CardCSS.card} ${variant=='shaded' ? CardCSS.shaded: ''}`}>
+            <div className={`${CardCSS.card} ${variant=='shaded' ? CardCSS.shaded: ''}`} data-count="8">
                 <div className={CardCSS.contentbox}>
                     <div className={CardCSS.iconbg}>
                         <div className={CardCSS.icon}>

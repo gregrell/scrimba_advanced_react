@@ -16,6 +16,25 @@
       paleturquoise 55%,
       paleturquoise 100%
     );
+
+    position: relative;
+  }
+
+  .card::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: attr(data-count);
+    font-family: inter;
+    font-weight: 500;
+    position:absolute;
+    top: -10px;
+    right: -10px;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: white;
+    border-radius: 50%;
+
   }
   
   .contentbox{
