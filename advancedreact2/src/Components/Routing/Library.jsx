@@ -2,8 +2,9 @@ import React from "react";
 import Badge from "../Badge/Badge";
 import Banner from "../Banner/Banner";
 import Card from "../Card/Card";
+import Testimonial from "../Testimonial/Testimonial";
 import { IoCloudUpload } from "react-icons/io5";
-
+import imageofwoman from "../Testimonial/RandomWoman25.jpeg"
 
 export default function Library(){
     return(
@@ -74,6 +75,15 @@ export default function Library(){
             <br/>
             <br/>
             <br/>
+
+            <div className="presentation">
+                <Testimonial
+                    image={imageofwoman}
+                    name="Mary Andersons"
+                    companyName="Workcation"
+                    position="CTO"
+                >piss</Testimonial>                
+            </div>
 
 
          
