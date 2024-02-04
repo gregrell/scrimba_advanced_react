@@ -1,12 +1,17 @@
 import React from "react";
+import fakeData from '../../fakeData'
 
 export default function ProductList(){
+
+        function genFakeList(){
+            return fakeData.map(product =>(
+                <li key={product.id}>{product.name}</li>
+            ))
+        }
         return(
         <>
             <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+                {genFakeList()}
             </ul>
         </>
     )
