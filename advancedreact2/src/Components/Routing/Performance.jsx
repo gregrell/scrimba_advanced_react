@@ -49,7 +49,8 @@ export default function PerformancePage(){
                 This causes computation time for each child component being rendered again and again. 
                 React.memo() will prevent this from being re-rendered unless the props coming into it change. 
                 React will just store that render in memory and return it instead of taking the CPU time to create each component again if props to it are the same. 
-                Just export default React.memo(Component function) instead of exporting the Component function
+                Just export default React.memo(Component function) instead of exporting the Component function. Look at console log for this, there is a time calc for each 
+                product component, that will only re-render when the parent mounts again, or if the color prop changes to the Product component
             </code>
             <button onClick={()=> setShowMemoProducts(prev => !prev)}>Show Memo Products</button>
 

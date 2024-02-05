@@ -26,7 +26,6 @@ export default function ProductListParent(){
 
     return(
         <>
-            <p> Time to render {delta} ms</p>
             <button onClick={()=>setSomeState(prev=>!prev)}>cause re-render</button>
             {products}
         </>
