@@ -1,5 +1,10 @@
 import React from "react";
 import ProductCSS from './Product.module.css'
+import classnames from "classnames"; /// use this below
+//let allClasses = classnames(className,  `${variant ? variant:"square"}`, `${color ? color:"gray"}`, "badge")
+
+
+
 
 function Product({product, color, ...rest}){
 
