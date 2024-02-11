@@ -11,3 +11,13 @@ li{
 .red{
     background-color: rgb(120, 87, 87);
 }
+
+.yellow{
+    color: yellow;
+}
+
+.blue{
+    color: blue;
+}
+
+.green{color: green;}

@@ -1,8 +1,12 @@
 import React from "react";
 import fakeData from '../../fakeData'
 import Product from "./ProductChild";
+import classnames from "classnames";
+
 
 import ProductCSS from './Product.module.css'
+
+
 
 
 export default function ProductListParent(){
@@ -21,12 +25,15 @@ export default function ProductListParent(){
     const end = Date.now()
     const delta = end - start
 
+    let allClasses = classnames( someState ? ProductCSS.yellow : ProductCSS.red)
+
+
 
 
 
     return(
         <>
-            <button onClick={()=>setSomeState(prev=>!prev)}>cause re-render</button>
+            <button onClick={()=>setSomeState(prev=>!prev)} className={ someState ? ProductCSS.green : ProductCSS.blue}>cause re-render</button>
             {products}
         </>
     )
